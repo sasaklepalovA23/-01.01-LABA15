@@ -1,0 +1,22 @@
+﻿<Window x:Class="LABA15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Лабораторная работа: Триггеры" Height="600" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Background="#2C3E50">
+            <TextBlock Text="Навигация" Foreground="White" FontSize="18" Margin="10" HorizontalAlignment="Center"/>
+            <Button Content="Пример из теории" Click="GoTheory" Margin="5" Height="35"/>
+            <Button Content="Задание 1" Click="GoTask1" Margin="5" Height="35"/>
+            <Button Content="Задание 2" Click="GoTask2" Margin="5" Height="35"/>
+            <Button Content="Задание 3" Click="GoTask3" Margin="5" Height="35"/>
+            <Button Content="Задание 4" Click="GoTask4" Margin="5" Height="35"/>
+            <Button Content="Задание 5" Click="GoTask5" Margin="5" Height="35"/>
+ 
+        </StackPanel>
+        <Frame Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
